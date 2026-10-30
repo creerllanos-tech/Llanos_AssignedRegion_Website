@@ -2,58 +2,131 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Homepage</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Homepage | Northern Travels Mindanao</title>
+  <meta name="description"
+    content="Discover waterfalls, island beaches, festivals and adventure in Northern Mindanao (Region X), Philippines.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Fraunces:opsz,wght@9..144,600;9..144,800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/x-icon" href="assets/icons/website_logo.ico">
 </head>
 
 <body>
-    <nav>
-        <ul>
-            <li><a href="index.html">Homepage</a></li>
-            <li><a href="destinations.html">Tourist Spots</a></li>
-            <li><a href="activities.html">Things To Do</a></li>
-            <li><a href="history.html">History and Culture</a></li>
-            <li><a href="plan-trip.html">Travel Guide</a></li>
-        </ul>
+
+  <a class="skip-link" href="#main-content">Skip to content</a>
+
+  <!-- Site header and navigation -->
+  <header class="site-header">
+    <a class="site-header__identity" href="index.html" aria-label="Northern Travels Mindanao homepage">
+      <img class="site-header__logo" src="assets/images/Northern Travels Logo.png" alt="" width="56" height="56">
+      <span class="site-header__brand">Northern Travels Mindanao</span>
+    </a>
+    <input type="checkbox" id="menu-toggle" class="menu-toggle" aria-label="Toggle menu">
+    <label for="menu-toggle" class="menu-button" aria-hidden="true"><span></span></label>
+    <nav class="site-nav" aria-label="Main">
+      <a class="site-nav__link" href="index.html" aria-current="page">Homepage</a>
+      <a class="site-nav__link" href="destinations.html">Tourist Spots</a>
+      <a class="site-nav__link" href="activities.html">Things To Do</a>
+      <a class="site-nav__link" href="history.html">History &amp; Culture</a>
+      <a class="site-nav__link" href="plan-trip.html">Travel Guide</a>
     </nav>
+  </header>
 
-    <header class="hero-section">
-        <div class="hero-overlay">
-            <div class="hero-content">
-                <h1 class="hero-title">Welcome to Northern Mindanao</h1>
-                <p class="hero-subtitle">Discover amazing experiences, premium services, and unforgettable journeys.</p>
-                <a href="destinations.html" class="hero-btn">Explore Now</a>
-            </div>
-        </div>
-    </header>
+  <main id="main-content">
+    <!-- Hero banner -->
+    <section class="hero">
+      <div class="hero__content">
+        <h1 class="hero__title">Northern Travels Mindanao</h1>
+        <p class="hero__tagline">Waterfalls, island beaches, and highland adventures in Region X.</p>
+        <a class="button" href="destinations.html">Explore destinations</a>
+      </div>
+    </section>
 
-    <div class="introduction">
-        <p>intro paragraph (1 or 2 paragraphs)</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit autem molestias assumenda vero suscipit
-            officia deserunt exercitationem mollitia nisi. Reprehenderit nihil commodi nesciunt dignissimos blanditiis
-            repellendus cum dolores asperiores vitae?</p>
-    </div>
+    <!-- Introduction to the region -->
+    <section class="intro">
+      <div class="intro__text">
+        <p class="intro__label">Welcome to Region X</p>
+        <h2 class="intro__heading">A region full of natural wonders</h2>
+        <p>Welcome to Northern Mindanao (Region X), a beautiful region in the Philippines known for its stunning
+          natural attractions, rich culture, and warm hospitality. Located in the northern part of Mindanao, the
+          region is composed of five provinces: Bukidnon, Camiguin, Lanao del Norte, Misamis Occidental, and
+          Misamis Oriental.</p>
+        <p>Beyond its natural beauty, Northern Mindanao is also home to vibrant festivals, fascinating history, and
+          delicious local delicacies. Visitors can explore the famous Maria Cristina Falls in Iligan City, enjoy
+          the beaches of Camiguin Island, experience whitewater rafting in Cagayan de Oro City, or discover the
+          traditions of Bukidnon's indigenous communities. Discover the beauty, culture, and adventures of Northern
+          Mindanao, where every destination has a story
+          to tell!</p>
+      </div>
+      <img class="intro__image" src="assets/images/mantigue-island.jpg"
+        alt="Aerial view of a forested island ringed by white sand" width="615" height="455">
+    </section>
 
-    <div class="gallery-grid">
-        <div id="item1">1</div>
-        <div id="item2">2</div>
-        <div id="item3">3</div>
-        <div id="item4">4</div>
-        <div id="item5">5</div>
-        <div id="item6">6</div>
-    </div>
+    <!-- Image gallery of tourist spots -->
+    <section class="gallery-section">
+      <div class="section-heading">
+        <h2>Tourist destinations</h2>
+        <p>A first look at six places worth the trip. <a href="destinations.html">See all the details.</a></p>
+      </div>
+      <div class="gallery">
+        <figure class="gallery__item">
+          <img class="gallery__image" src="assets/images/mantigue-island.jpg"
+            alt="Aerial view of a forested island ringed by white sand and turquoise water" width="615" height="455"
+            loading="lazy">
+          <figcaption class="gallery__caption"><strong>Mantigue Island</strong><span>Mahinog, Camiguin</span>
+          </figcaption>
+        </figure>
+        <figure class="gallery__item">
+          <img class="gallery__image" src="assets/images/camiguin-coast.jpg"
+            alt="Calm clear water with a cloud-capped mountain behind a small fishing boat" width="576" height="432"
+            loading="lazy">
+          <figcaption class="gallery__caption"><strong>Camiguin Coastline</strong><span>Camiguin</span></figcaption>
+        </figure>
+        <figure class="gallery__item">
+          <img class="gallery__image" src="assets/images/mt-hibok-hibok.jpg"
+            alt="Aerial view of a green volcano above farmland" width="643" height="477" loading="lazy">
+          <figcaption class="gallery__caption"><strong>Mt. Hibok-Hibok</strong><span>Mambajao, Camiguin</span>
+          </figcaption>
+        </figure>
+        <figure class="gallery__item">
+          <img class="gallery__image" src="assets/images/mt-balatukan-cafe.jpg"
+            alt="Garden cafe with a peacock-shaped hedge arch and wooden cottages" width="739" height="415"
+            loading="lazy">
+          <figcaption class="gallery__caption"><strong>Mt. Balatukan Cafe</strong><span>Misamis Oriental</span>
+          </figcaption>
+        </figure>
+        <figure class="gallery__item">
+          <img class="gallery__image" src="assets/images/maria-cristina-falls.jpg"
+            alt="Maria Cristina Falls dropping into a gorge" width="1200" height="800" loading="lazy">
+          <figcaption class="gallery__caption"><strong>Maria Cristina Falls</strong><span>Iligan City, Lanao del
+              Norte</span></figcaption>
+        </figure>
+        <figure class="gallery__item">
+          <img class="gallery__image" src="assets/images/cdo-whitewater-rafting.jpg"
+            alt="Rafters paddling through rapids on the Cagayan de Oro River" width="1200" height="800" loading="lazy">
+          <figcaption class="gallery__caption"><strong>Cagayan de Oro Whitewater Rafting</strong><span>Cagayan de Oro
+              City, Misamis Oriental</span></figcaption>
+        </figure>
+      </div>
+    </section>
+  </main>
 
-    <hr>
-    <footer>
-        <br>
-        <p>Owner: Creer Lloyd M. Llanos</p>
-        <p>Contact Number: 09298207229</p>
-        <p>Email: creer.llanos@lsu.edu.ph</p>
-        <p>All Rights Reserved 2026</p>
-    </footer>
-    <hr>
+  <!-- Site footer with contact information -->
+  <footer class="site-footer">
+    <h2 class="site-footer__title">Contact us</h2>
+    <address class="site-footer__address">
+      <p>Email: <a href="mailto:creer.llanos@lsu.edu.ph">creer.llanos@lsu.edu.ph</a></p>
+      <p>Phone: <a href="tel:+6309298207229">(092) 982-07229</a></p>
+      <p>Purok - 5, Lapasan, Clarin, Misamis Occidental, Northern Mindanao, Philippines</p>
+    </address>
+    <p class="site-footer__copyright">&copy; 2026 Northern Travels Mindanao. All rights reserved.</p>
+  </footer>
+
 </body>
 
 </html>
